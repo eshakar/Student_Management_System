@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Student Portal</h1>
+    </header>
+    
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search">
+        <button id="searchButton">Search</button>
+    </div>
+    
+    <div class="sort-buttons">
+        <button id="sortAZ">Sort A→Z</button>
+        <button id="sortZA">Sort Z→A</button>
+        <button id="sortMarks">Sort By Marks</button>
+        <button id="sortPassing">Sort By Passing</button>
+        <button id="sortClass">Sort By Class</button>
+        <button id="sortGender">Sort By Gender</button>
+    </div>
+    
+    <div id="tableContainer">
+        <table id="studentsTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Gender</th>
+                    <th>Class</th>
+                    <th>Marks</th>
+                    <th>Passing</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <!-- Student data will be populated here -->
+            </tbody>
+        </table>
+    </div>
+
+    <div id="genderTables" class="hidden">
+        <div id="femaleTableContainer">
+            <h2>Female Students</h2>
+            <table id="femaleTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Gender</th>
+                        <th>Class</th>
+                        <th>Marks</th>
+                        <th>Passing</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody id="femaleTableBody">
+                    <!-- Female student data will be populated here -->
+                </tbody>
+            </table>
+        </div>
+        
+        <div id="maleTableContainer">
+            <h2>Male Students</h2>
+            <table id="maleTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Gender</th>
+                        <th>Class</th>
+                        <th>Marks</th>
+                        <th>Passing</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody id="maleTableBody">
+                    <!-- Male student data will be populated here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
